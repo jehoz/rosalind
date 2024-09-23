@@ -5,6 +5,7 @@
             [clojure.string :as string]
             [rosalind.solvers :refer [solve]]
 
+            [rosalind.solvers.rna]
             [rosalind.solvers.dna]))
 
 (def cli-options
