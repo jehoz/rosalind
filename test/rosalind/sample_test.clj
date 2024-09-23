@@ -16,5 +16,11 @@
       (is (= (solve :rna sample-data)
              "GAUGGAACUUGACUACGUAAAUU")))))
 
+(deftest revc-sample
+  (testing "Reverse compliment sample dataset produces sample output"
+    (let [sample-data "AAAACCCGGT"]
+      (is (= (solve :revc sample-data)
+             "ACCGGGTTTT")))))
+
 (comment
   (run-tests))
