@@ -1,7 +1,8 @@
-(ns rosalind.dna)
+(ns rosalind.dna
+  (:require [rosalind.solvers :refer [solve]]))
 
-(defn solve
-  [strand]
+(defmethod solve :dna
+  [_ strand]
   (let [counts (frequencies strand)]
     (str (counts \A) " "
          (counts \C) " "
