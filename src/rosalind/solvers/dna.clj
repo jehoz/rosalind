@@ -1,4 +1,4 @@
-(ns rosalind.dna
+(ns rosalind.solvers.dna
   (:require [rosalind.solvers :refer [solve]]))
 
 (defmethod solve :dna

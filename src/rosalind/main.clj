@@ -5,7 +5,7 @@
             [clojure.string :as string]
             [rosalind.solvers :refer [solve]]
 
-            [rosalind.dna]))
+            [rosalind.solvers.dna]))
 
 (def cli-options
   [["-p" "--problem ID" "Problem id, e.g. DNA"
