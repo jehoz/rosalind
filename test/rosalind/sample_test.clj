@@ -1,8 +1,6 @@
 (ns rosalind.sample-test
   (:require [clojure.test :refer [deftest testing is run-tests]]
-            [rosalind.solvers :refer [solve]]
-            [rosalind.solvers.dna]
-            [rosalind.solvers.rna]))
+            [rosalind.solvers :refer [solve]]))
 
 (deftest dna-sample
   (testing "DNA sample dataset generates correct symbol counts"
@@ -21,6 +19,12 @@
     (let [sample-data "AAAACCCGGT"]
       (is (= (solve :revc sample-data)
              "ACCGGGTTTT")))))
+
+(deftest fib-sample
+  (testing "Fibonacci sample dataset produces sample output"
+    (let [sample-data "5 3"]
+      (is (= (solve :fib sample-data)
+             "19")))))
 
 (comment
   (run-tests))
