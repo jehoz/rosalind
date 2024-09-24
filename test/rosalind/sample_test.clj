@@ -41,5 +41,11 @@
              (str "Rosalind_0808\n"
                   "60.91954"))))))
 
+(deftest hamm-sample
+  (testing "Hamming distance sample dataset produces sample output"
+    (let [sample-data "GAGCCTACTAACGGGAT\nCATCGTAATGACGGCCT"]
+      (is (= (solve :hamm sample-data)
+             "7")))))
+
 (comment
   (run-tests))
