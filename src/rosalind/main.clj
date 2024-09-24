@@ -8,7 +8,8 @@
             [rosalind.solvers.dna]
             [rosalind.solvers.rna]
             [rosalind.solvers.revc]
-            [rosalind.solvers.fib]))
+            [rosalind.solvers.fib]
+            [rosalind.solvers.gc]))
 
 (def cli-options
   [["-p" "--problem ID" "Problem id, e.g. DNA"
