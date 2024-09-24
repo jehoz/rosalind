@@ -47,5 +47,11 @@
       (is (= (solve :hamm sample-data)
              "7")))))
 
+(deftest iprb-sample
+  (testing "Inheritance probability sample dataset produced sample output"
+    (let [sample-data "2 2 2"]
+      (is (< (- (solve :iprb sample-data) 0.78333)
+             0.0001)))))
+
 (comment
   (run-tests))

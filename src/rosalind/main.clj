@@ -10,7 +10,8 @@
             [rosalind.solvers.revc]
             [rosalind.solvers.fib]
             [rosalind.solvers.gc]
-            [rosalind.solvers.hamm]))
+            [rosalind.solvers.hamm]
+            [rosalind.solvers.iprb]))
 
 (def cli-options
   [["-p" "--problem ID" "Problem id, e.g. DNA"
